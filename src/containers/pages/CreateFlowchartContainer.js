@@ -6,7 +6,7 @@
 import * as React from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
-import FrameTable from '../../components/pages/FrameTable';
+import CreateFlowchart from '../../components/pages/CreateFlowchart';
 
 // Map the global application state to the props
 function mapStateToProps(state: any) {
@@ -24,4 +24,4 @@ function mapDispatchToProps(dispatch: any) {
   );
 }
 
-export default connect(mapStateToProps,mapDispatchToProps)(FrameTable);
+export default connect(mapStateToProps,mapDispatchToProps)(CreateFlowchart);
