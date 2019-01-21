@@ -17,46 +17,32 @@ class Navbar extends React.Component<Props,State> {
     super(props,state);
     this.state = {}
   }
-  hideFixedMenu = () => this.setState({fixed: false})
-  showFixedMenu = () => this.setState({fixed: true})
 
   render() {
-    const {fixed} = this.state
+
     return (
       <div>
-        <Visibility
-          once={false}
-          onBottomPassed={this.showFixedMenu}
-          onBottomPassedReverse={this.hideFixedMenu}
-        >
           <Segment
             inverted
             textAlign="center"
+            className="fadeNav"
             style={{minHeight: 70, padding: '1em 0em'}}
             vertical
           >
-            <Menu
-              fixed={fixed ? 'top' : null}
-              inverted={!fixed}
-              pointing={!fixed}
-              secondary={!fixed}
-              size="large"
-            >
+            <Menu fixed="top" size="large" inverted>
               <Container>
-                <Menu.Item as={NavLink} exact to="/">
+                <Menu.Item as={NavLink} exact to="/" position="left">
                   Home
                 </Menu.Item>
-                <Menu.Item as={NavLink} exact to="#" position="center">
+                <Menu.Item as={NavLink} exact to="#">
                   <Image src={src} size='small' />
-                  <Divider hidden />
                 </Menu.Item>
                 <Menu.Item position="right">
-                  get ready
+                  Info
                 </Menu.Item>
               </Container>
             </Menu>
           </Segment>
-        </Visibility>
       </div>
 
       );

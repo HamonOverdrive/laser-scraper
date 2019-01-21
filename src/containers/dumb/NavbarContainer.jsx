@@ -6,7 +6,7 @@
 import * as React from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
-import Navbar from '../../components/pages/Navbar';
+import Navbar from '../../components/dumb/Navbar';
 
 // Map the global application state to the props
 function mapStateToProps(state: any) {

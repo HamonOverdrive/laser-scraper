@@ -15,8 +15,8 @@
  // Containers (pages and controls)
  import LandingPageContainer  from "../containers/pages/LandingPageContainer";
  import LoginPageContainer  from "../containers/pages/LoginPageContainer";
- import Navbar from "../containers/pages/NavbarContainer"
- import FrameTableContainer from "../containers/pages/FrameTableContainer"
+ import CreateFlowchartContainer from "../containers/pages/CreateFlowchartContainer"
+ import Navbar from "../containers/dumb/NavbarContainer"
 
  // Props received from redux state
  type Props = {
@@ -55,8 +55,7 @@
            <div style={{ margin: '0em 0em 0em 0em', padding: '0em 0em 0em 0em' ,borderColor: 'coral', borderStyle: 'none'}}>
              <div>
              <Switch>
-               <Route path="/landingpage" component={LandingPageContainer} />
-               <Route path="/frameTable" component={FrameTableContainer} />
+               <Route path="/diagram" component={CreateFlowchartContainer} />
 
              </Switch>
              </div>
