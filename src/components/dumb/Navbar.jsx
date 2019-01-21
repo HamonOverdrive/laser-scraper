@@ -38,7 +38,7 @@ class Navbar extends React.Component<Props,State> {
                   <Image src={src} size='small' />
                 </Menu.Item>
                 <Menu.Item position="right">
-                  get ready
+                  Info
                 </Menu.Item>
               </Container>
             </Menu>

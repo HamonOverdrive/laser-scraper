@@ -2,6 +2,10 @@ body {
     background: black;
 }
 
+h1.ui.header{
+    color: white;
+}
+
 .ui.inverted.segment, .ui.primary.inverted.segment{
     background: -moz-linear-gradient(top, hsla(0,0%,0%,0.65) 16%, hsla(0,0%,0%,0.65) 21%, hsla(0,0%,0%,0) 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(top, hsla(0,0%,0%,0.65) 16%,hsla(0,0%,0%,0.65) 21%,hsla(0,0%,0%,0) 100%); /* Chrome10-25,Safari5.1-6 */
